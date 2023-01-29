@@ -1,0 +1,263 @@
+/* Global Rule's */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color: #03a9f4;
+  --secondary-color: #ff9800;
+}
+
+body {
+  background-color: #EEE;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* End Global Rule's */
+
+
+
+/* Start land-top */
+.land-top {
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  background-position: left;
+  min-height: 150px;
+  position: relative;
+}
+
+.land-top .images {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+}
+
+@media(max-width:992px) {
+  .land-top .images {
+    top: 106px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+  }
+}
+
+/* End land-top */
+
+/* start navbar */
+.navbar {
+  background-color: rgb(0 0 0);
+  color: #FFF;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: .3s;
+  margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: var(--main-color);
+}
+
+.navbar .navbar-nav .nav-link.active {
+  background-color: var(--main-color);
+  border-radius: 2px;
+}
+
+.navbar .navbar-toggler {
+  border: 1px solid #FFF;
+  padding: 10px 15px;
+}
+
+.navbar .navbar-toggler i {
+  color: #FFF;
+  font-size: 27px;
+}
+
+@media(max-width:992px) {
+  .navbar-nav {
+    margin-top: 15px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin-bottom: 10px;
+    padding: 5px
+  }
+}
+
+/* End navbar */
+
+/* Start Landing */
+.landing {
+  min-height: 300px;
+  margin-top: 15px;
+}
+
+.landing .land {
+  background-image: url(../images/banner1.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+/* End Landing */
+
+
+
+
+/* Start Page */
+.page {
+  margin-top: 60px;
+}
+
+.page .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:992px) {
+  .page .box {
+    flex-wrap: wrap;
+  }
+
+  .page .right {
+    flex-basis: 100% !important;
+  }
+
+  .page .left {
+    flex-basis: 100% !important;
+  }
+
+  .page .head-top h3 {
+    font-size: 17px !important;
+  }
+
+  .page .body .links {
+    padding: 0 40px !important;
+  }
+}
+
+.page .head-top h3 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 29px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 5px;
+}
+
+/* Start Left Section */
+.page .left {
+  flex-basis: 74%;
+}
+
+.page .body {
+  margin-top: 30px;
+}
+
+.page .body p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #434343;
+  line-height: 1.8;
+}
+
+.page .body .links {
+  padding: 0 60px;
+}
+
+.page .body .links li {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #434343;
+  padding: 0 10px;
+}
+
+.page .body .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page .body .images div {
+  flex-basis: 48%;
+  text-align: center;
+  border: 3px solid #FFF;
+  padding: 5px;
+}
+
+.page .body .images div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page p.end {
+  margin-top: 30px;
+}
+
+/* End Left Section */
+/* Start Right Section */
+.page .right {
+  flex-basis: 25%;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.right .section h3 {
+  font-size: 15px;
+  color: #ff9800;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.right .section span {
+  font-weight: bold;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.right .section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #434343;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+/* End Right Section */
+/* End Page */
+
+
+.copyright {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid #CCC;
+  padding: 30px 0 0 0;
+  color: #434343;
+  font-size: 19px;
+}
+
+@media(max-width:992px) {
+  .copyright {
+    font-size: 16px;
+    padding: 20px 0 0 0;
+  }
+}
+
+.copyright span {
+  color: var(--main-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
